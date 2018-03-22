@@ -21,6 +21,11 @@ export default {
     background-color: grey;
     height: 10vh;
     width: 10vh;
+    border: 0.2rem solid white;
     border-radius: 1rem;
+  }
+
+  p {
+    margin: 0;
   }
 </style>

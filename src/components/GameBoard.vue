@@ -1,6 +1,8 @@
 <template>
 <div class="game-board">
-  <GameCard/>
+  <div class="game-cards" v-for="(card, i) of 12">
+    <GameCard/>
+  </div>
 </div>
 </template>
 

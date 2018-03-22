@@ -1,19 +1,16 @@
 <template>
   <div id="app">
     <HomePage/>
-    <GameBoard/>
   </div>
 </template>
 
 <script>
 import HomePage from './components/HomePage'
-import GameBoard from './components/GameBoard'
 
 export default {
   name: 'App',
   components: {
-    HomePage,
-    GameBoard
+    HomePage
   }
 }
 </script>
