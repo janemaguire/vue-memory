@@ -21,5 +21,6 @@ export default {
     background-color: grey;
     height: 10vh;
     width: 10vh;
+    border-radius: 1rem;
   }
 </style>

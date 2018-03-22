@@ -1,22 +1,19 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <HomePage/>
     <GameBoard/>
-    <GameCard/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HomePage from './components/HomePage'
 import GameBoard from './components/GameBoard'
-import GameCard from './components/GameCard'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    GameBoard,
-    GameCard
+    HomePage,
+    GameBoard
   }
 }
 </script>

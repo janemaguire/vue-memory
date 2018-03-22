@@ -1,13 +1,17 @@
 <template>
 <div class="game-board">
-  <h1>{{ msg }}</h1>
-  <h2>Game Board</h2>
+  <GameCard/>
 </div>
 </template>
 
 <script>
+import GameCard from '../components/GameCard'
+
 export default {
   name: 'GameBoard',
+  components: {
+    GameCard
+  },
   data() {
     return {
       msg: 'I am the board'
@@ -22,5 +26,7 @@ export default {
     background-color: pink;
     height: 50vh;
     width: 50vw;
+    border-radius: 1rem;
+    padding: 1rem;
   }
 </style>
