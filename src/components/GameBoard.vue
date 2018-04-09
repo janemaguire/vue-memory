@@ -1,7 +1,7 @@
 <template>
 <div class="game-board">
-  <div class="game-cards" v-for="(card, i) of 12">
-    <GameCard/>
+  <div class="game-card" v-for="item of 20" :key="item.id">
+      <GameCard />
   </div>
 </div>
 </template>
@@ -14,7 +14,7 @@ export default {
   components: {
     GameCard
   },
-  data() {
+  data () {
     return {
       msg: 'I am the board'
     }
@@ -24,11 +24,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .game-board {
-    background-color: pink;
-    height: 50vh;
-    width: 50vw;
-    border-radius: 1rem;
-    padding: 1rem;
-  }
+.game-board {
+  background-color: pink;
+  height: 60vh;
+  width: 50vw;
+  border-radius: 1vw;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.game-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

@@ -12,7 +12,7 @@ export default {
   components: {
     GameBoard
   },
-  data() {
+  data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }

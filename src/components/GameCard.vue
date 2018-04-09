@@ -1,13 +1,14 @@
 <template>
 <div class="game-card">
   <p>Game Card</p>
+  <p>{{ msg }}</p>
 </div>
 </template>
 
 <script>
 export default {
   name: 'GameCard',
-  data() {
+  data () {
     return {
       msg: 'I am the card'
     }
